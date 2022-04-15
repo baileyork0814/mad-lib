@@ -19,8 +19,9 @@ function libTwo(){
 function printLibOne(){
 	var paraone = document.createElement("p");
 	paraone.innerText = 'There once was a ' + document.getElementById("nounOne") + ' and ' + document.getElementById("pronounOne") + ' loved to ' + document.getElementById("adverbOne") + ' ' + document.getElementById("verbOne") + ' in different planetariums. ' + document.getElementById("interjectionOne") + ' What a ' + document.getElementById("adjectiveOne") + ' time it was. ' + document.getElementById("pronounOne") + ' especially loved the looking at the planets that were shaped like a ' + document.getElementById("nounTwo") + '. ' + document.getElementById("pronounOne") + ' also liked when ' + document.getElementById("pronounOne") + ' went ' + document.getElementById("prepositionOne") + ' Becky. She made the adventure much more ' + document.getElementById("adjectiveTwo") + '. One day the ' + document.getElementById("nounOne") + ' went to a planetarium field ' + document.getElementById("conjunctionOne") + ' Becky stayed at home. This made the ' +  document.getElementById("nounOne") + ' ' + document.getElementById("adverbTwo") + ' sad. The ' + document.getElementById("nounOne") + ' would say "' + document.getElementById("interjectionTwo") + ' I am really sad!" Over and over ' + document.getElementById("prepositionTwo") + ' ' + document.getElementById("pronounTwo") + ' would come back and they would ' + document.getElementById("verbTwo") + ' together all day long. ' + document.getElementById("conjunctionTwo") + ' on other days, ' + document.getElementById("pronounOne") + ' just stayed home and watched TV.';
-	div.append(paraone);
-	console.log(div.para-one);
+	var paraOneDiv = document.getElementById("paraOne");
+	paraOneDiv.append(paraone);
+	console.log(paraOneDiv);
 }
 
 //create a function that displays the second lib
