@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang ="en">
+	
+	<head>
+		<title>Mad Libs</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src = "js/script.js" defer></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<div id="whichLib" class="hidden">
+			<p>Which MadLib would you like to fill out?</p>
+			<button class="lib-one" onclick="libOne()">MadLib 1</button>
+			<button class="lib-two" onclick="libTwo()">MadLib 2</button>
+		</div>
+		<div id="libOneForm" class="hidden">
+		<img src = "img/madlibs.jpg">
+			<form>
+				<p>Give me one of each of the following:</p><br>
+				<label for="nounOne">Noun</label>
+				<input type="text" id="nounOne" name="nounOne"><br><br>
+				<label for="pronounOne">Pronoun</label>
+				<input type="text" id="pronounOne" name="pronounOne"><br><br>
+				<label for="adverbOne">Adverb</label>
+				<input type="text" id="adverbOne" name="adverbOne"><br><br>
+				<label for="verbOne">Verb</label>
+				<input type="text" id="verbOne" name="verbOne"><br><br>
+				<label for="interjectionOne">Interjection</label>
+				<input type="text" id="interjectionOne" name="interjectionOne"><br><br>
+				<label for="adjectiveOne">Adjective</label>
+				<input type="text" id="adjectiveOne" name="adjectiveOne"><br><br>
+				<label for="nounTwo">Noun</label>
+				<input type="text" id="nounTwo" name="nounTwo"><br><br>
+				<label for="prepositionOne">Preposition</label>
+				<input type="text" id="prepositionOne" name="prepositionOne"><br><br>
+				<label for="pronounTwo">Pronoun</label>
+				<input type="text" id="pronounTwo" name="pronounTwo"><br><br>
+				<label for="adjectiveTwo">Adjective</label>
+				<input type="text" id="adjectiveTwo" name="adjectiveTwo"><br><br>
+				<label for="conjunctionOne">Conjunction</label>
+				<input type="text" id="conjunctionOne" name="conjunctionOne"><br><br>
+				<label for="adverbTwo">Adverb</label>
+				<input type="text" id="adverbTwo" name="adverbTwo"><br><br>
+				<label for="interjectionTwo">Interjection</label>
+				<input type="text" id="interjectionTwo" name="interjectionTwo"><br><br>
+				<label for="prepositionTwo">Preposition</label>
+				<input type="text" id="prepositionTwo" name="prepositionTwo"><br><br>
+				<label for="verbTwo">Verb</label>
+				<input type="text" id="verbTwo" name="verbTwo"><br><br>
+				<label for="conjunctionTwo">Conjunction</label>
+				<input type="text" id="conjunctionTwo" name="conjunctionTwo"><br><br>
+				<input type="reset" value="Clear"/>
+				<input type="submit" value="Submit" onclick="printLibOne"/>
+			</form>
+		</div>
+		<div>
+		</div>
+		<div class="para-one">
+		</div>
+		<div id="libTwoForm" class="hidden">
+		<img src = "img/madlibs.jpg">
+			<form>
+				<p>Give me one of each of the following:</p><br>
+				<label for="adverbOne">Adverb</label>
+				<input type="text" id="adverbOne" name="adverbOne"><br><br>
+				<label for="adjectiveOne">Adjective</label>
+				<input type="text" id="adjectiveOne" name="adjectiveOne"><br><br>
+				<label for="prepositionOne">Preposition</label>
+				<input type="text" id="prepositionOne" name="prepositionOne"><br><br>
+				<label for="prepositionTwo">Preposition</label>
+				<input type="text" id="prepositionTwo" name="prepositionTwo"><br><br>
+				<label for="adjectiveTwo">Adjective</label>
+				<input type="text" id="adjectiveTwo" name="adjectiveTwo"><br><br>
+				<label for="nounOne">Proper Noun</label>
+				<input type="text" id="nounOne" name="nounOne"><br><br>
+				<label for="conjunctionOne">Conjunction</label>
+				<input type="text" id="conjunctionOne" name="conjunctionOne"><br><br>
+				<label for="nounTwo">Noun</label>
+				<input type="text" id="nounTwo" name="nounTwo"><br><br>
+				<label for="interjectionOne">Interjection</label>
+				<input type="text" id="interjectionOne" name="interjectionOne"><br><br>
+				<label for="conjunctionTwo">Conjunction</label>
+				<input type="text" id="conjunctionTwo" name="conjunctionTwo"><br><br>
+				<label for="pronounOne">Pronoun</label>
+				<input type="text" id="pronounOne" name="pronounOne"><br><br>
+				<label for="pronounTwo">Pronoun</label>
+				<input type="text" id="pronounTwo" name="pronounTwo"><br><br>
+				<label for="adverbTwo">Adverb</label>
+				<input type="text" id="adverbTwo" name="adverbTwo"><br><br>
+				<label for="verbOne">Verb</label>
+				<input type="text" id="verbOne" name="verbOne"><br><br>
+				<label for="verbTwo">Verb</label>
+				<input type="text" id="verbTwo" name="verbTwo"><br><br>
+				<label for="interjectionTwo">Interjection</label>
+				<input type="text" id="interjectionTwo" name="interjectionTwo"><br><br>
+				<input type="reset" value="Clear"/>
+				<input type="submit" value="Submit" onclick="printLibTwo"/>
+			</form>
+		</div>
+		<div class="para-two">
+		</div>
+	</body>
+</html>
