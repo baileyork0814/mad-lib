@@ -1,41 +1,135 @@
+//HTML
+var whichLibDiv = document.getElementById("whichLib");
+var libOneDiv = document.getElementById("libOne");
+var libTwoDiv = document.getElementById("libTwo");
+
 //show the option to choose between the two mad libs
-document.getElementById("whichLib").classList.toggle("hidden");
+whichLibDiv.classList.toggle("hidden");
 
 //create a function that runs the first lib
-function libOne(){
-	//hide which lib form and display first lib
-	document.getElementById("whichLib").classList.toggle("hidden");
-	document.getElementById("libOneForm").classList.toggle("hidden");
+function libOne() {
+  //hide which lib form and display first lib
+  whichLibDiv.classList.toggle("hidden");
+  libOneDiv.classList.toggle("hidden");
 }
 
 //create a function that runs the second lib
-function libTwo(){
-	//hide which lib form and display second lib
-	document.getElementById("whichLib").classList.toggle("hidden");
-	document.getElementById("libTwoForm").classList.toggle("hidden");
+function libTwo() {
+  //hide which lib form and display second lib
+  whichLibDiv.classList.toggle("hidden");
+  libTwoDiv.classList.toggle("hidden");
 }
 
 //create a function that displays the first lib
-function printLibOne(){
-	document.getElementById("libOneForm").classList.toggle("hidden");
-	var paraone = document.createElement("p");
-	paraone.innerText = 'There once was a ' + document.getElementById("nounOne") + ' and ' + document.getElementById("pronounOne") + ' loved to ' + document.getElementById("adverbOne") + ' ' + document.getElementById("verbOne") + ' in different planetariums. ' + document.getElementById("interjectionOne") + ' What a ' + document.getElementById("adjectiveOne") + ' time it was. ' + document.getElementById("pronounOne") + ' especially loved the looking at the planets that were shaped like a ' + document.getElementById("nounTwo") + '. ' + document.getElementById("pronounOne") + ' also liked when ' + document.getElementById("pronounOne") + ' went ' + document.getElementById("prepositionOne") + ' Becky. She made the adventure much more ' + document.getElementById("adjectiveTwo") + '. One day the ' + document.getElementById("nounOne") + ' went to a planetarium field ' + document.getElementById("conjunctionOne") + ' Becky stayed at home. This made the ' +  document.getElementById("nounOne") + ' ' + document.getElementById("adverbTwo") + ' sad. The ' + document.getElementById("nounOne") + ' would say "' + document.getElementById("interjectionTwo") + ' I am really sad!" Over and over ' + document.getElementById("prepositionTwo") + ' ' + document.getElementById("pronounTwo") + ' would come back and they would ' + document.getElementById("verbTwo") + ' together all day long. ' + document.getElementById("conjunctionTwo") + ' on other days, ' + document.getElementById("pronounOne") + ' just stayed home and watched TV.';
-	var paraOneDiv = document.getElementById("paraOne");
-	document.getElementById("paraOne").innerHTML = paraone;
-	document.getElementById("paraOne").classList.toggle("hidden");
-	paraOneDiv.append(paraone);
-	console.log(paraOneDiv);
+function printLibOne() {
+  libOneDiv.classList.toggle("hidden");
+  var paraone = document.createElement("p");
+  paraone.innerText =
+    "There once was a " +
+    document.getElementById("nounOne").value +
+    " and " +
+    document.getElementById("pronounOne").value +
+    " loved to " +
+    document.getElementById("adverbOne").value +
+    " " +
+    document.getElementById("verbOne").value +
+    " in different planetariums. " +
+    document.getElementById("interjectionOne").value +
+    " What a " +
+    document.getElementById("adjectiveOne").value +
+    " time it was. " +
+    document.getElementById("pronounOne").value +
+    " especially loved the looking at the planets that were shaped like a " +
+    document.getElementById("nounTwo").value +
+    ". " +
+    document.getElementById("pronounOne").value +
+    " also liked when " +
+    document.getElementById("pronounOne").value +
+    " went " +
+    document.getElementById("prepositionOne").value +
+    " Becky. She made the adventure much more " +
+    document.getElementById("adjectiveTwo").value +
+    ". One day the " +
+    document.getElementById("nounOne").value +
+    " went to a planetarium field " +
+    document.getElementById("conjunctionOne").value +
+    " Becky stayed at home. This made the " +
+    document.getElementById("nounOne").value +
+    " " +
+    document.getElementById("adverbTwo").value +
+    " sad. The " +
+    document.getElementById("nounOne").value +
+    ' would say "' +
+    document.getElementById("interjectionTwo").value +
+    ' I am really sad!" Over and over ' +
+    document.getElementById("prepositionTwo").value +
+    " " +
+    document.getElementById("pronounTwo").value +
+    " would come back and they would " +
+    document.getElementById("verbTwo").value +
+    " together all day long. " +
+    document.getElementById("conjunctionTwo").value +
+    " on other days, " +
+    document.getElementById("pronounOne").value +
+    " just stayed home and watched TV.";
+
+  var paraOneDiv = document.getElementById("paraOne");
+
+  //change class to libs (a styled class) and show the paragraph
+  paraOneDiv.classList.add("libs");
+  paraOneDiv.classList.toggle("hidden");
+
+  paraOneDiv.append(paraone);
 }
 
 //create a function that displays the second lib
-function printLibTwo(){
-	document.getElementById("libTwoForm").classList.toggle("hidden");
-	var paratwo = document.createElement("p");
-	paratwo.innerText = "Jelly beans aren't just Easter candy; they have a(n) " + document.getElementById("adverbOne") + ' long and ' + document.getElementById("adjectiveOne") + ' history in the USA, dating back to ' + document.getElementById("prepositionOne") + ' the 1800s. ' + document.getElementById("prepositionTwo") + ' the ' + document.getElementById("adjectiveTwo") + ' ' + document.getElementById("nounTwo") + ' War, Americans were sent jelly beans to soldiers to put smiles on their faces. ' + document.getElementById("conjunctionOne") + ' this pushed the start of "penny candy" sweets you could buy for just one ' +  document.getElementById("nounTwo") + '. ' + document.getElementById("interjectionOne") + "! Ain't that something? " + document.getElementById("conjunctionTwo") + ' not all people thouhght ' + document.getElementById("pronounOne") + ' was/were worth all the hype. ' + document.getElementById("pronounTne") + ' thought ' + document.getElementById("pronounOne") + ' make you ' + document.getElementById("adverbTwo") + ' ' + document.getElementById("verbOne") + ' and ' + document.getElementById("verbTwo") + '. But, that just made everyone else think, "' + document.getElementById("interjectionTwo") + ' ' + document.getElementById("pronounTwo") + ' are so dumb!"';
-	document.write(paratwo);
-	/*document.getElementById("paraTwo").innerHTML = paratwo;
-	document.getElementById("paraTwo").classList.toggle("hidden");
-	div.append(paratwo)
-	console.log(div.para-two);*/
-}
+function printLibTwo() {
+  libTwoDiv.classList.toggle("hidden");
+  var paratwo = document.createElement("p");
+  paratwo.innerText =
+    "Jelly beans aren't just Easter candy; they have a(n) " +
+    document.getElementById("adverb1").value +
+    " long and " +
+    document.getElementById("adjective1").value +
+    " history in the USA, dating back to " +
+    document.getElementById("preposition1").value +
+    " the 1800s. " +
+    document.getElementById("preposition2").value +
+    " the " +
+    document.getElementById("adjective2").value +
+    " " +
+    document.getElementById("noun2").value +
+    " War, Americans were sent jelly beans to soldiers to put smiles on their faces. " +
+    document.getElementById("conjunction1").value +
+    ' this pushed the start of "penny candy" sweets you could buy for just one ' +
+    document.getElementById("noun2").value +
+    ". " +
+    document.getElementById("interjection1").value +
+    "! Ain't that something? " +
+    document.getElementById("conjunction2").value +
+    " not all people thouhght " +
+    document.getElementById("pronoun1").value +
+    " was/were worth all the hype. " +
+    document.getElementById("pronoun1").value +
+    " thought " +
+    document.getElementById("pronoun1").value +
+    " make you " +
+    document.getElementById("adverb2").value +
+    " " +
+    document.getElementById("verb1").value +
+    " and " +
+    document.getElementById("verb2").value +
+    '. But, that just made everyone else think, "' +
+    document.getElementById("interjection2").value +
+    " " +
+    document.getElementById("pronoun2").value +
+    ' are so dumb!"';
 
+  var paraTwoDiv = document.getElementById("paraTwo");
+
+  //change class to libs (a styled class) and show the paragraph
+  paraTwoDiv.classList.add("libs");
+  paraTwoDiv.classList.toggle("hidden");
+
+  paraTwoDiv.append(paratwo);
+}

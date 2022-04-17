@@ -27,3 +27,13 @@ div form
 	margin-right: auto;
 	padding: 20px 0 20px 0;
 }
+/*style libTwo*/
+.libs
+{
+	color: black;
+	background-color: #E8F4FF;
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
