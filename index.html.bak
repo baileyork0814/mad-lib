@@ -57,7 +57,7 @@
 			</form>
 		</div>
 		
-		<div id="paraOne" class="hidden">
+		<div id="paraOne">
 		</div>
 		
 		<div id="libTwoForm" class="hidden">
@@ -101,7 +101,7 @@
 			</form>
 		</div>
 		
-		<div id="paraTwo" class="hidden">
+		<div id="paraTwo">
 		</div>
 		
 	</body>

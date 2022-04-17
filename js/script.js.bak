@@ -32,10 +32,9 @@ function printLibTwo(){
 	document.getElementById("libTwoForm").classList.toggle("hidden");
 	var paratwo = document.createElement("p");
 	paratwo.innerText = "Jelly beans aren't just Easter candy; they have a(n) " + document.getElementById("adverbOne") + ' long and ' + document.getElementById("adjectiveOne") + ' history in the USA, dating back to ' + document.getElementById("prepositionOne") + ' the 1800s. ' + document.getElementById("prepositionTwo") + ' the ' + document.getElementById("adjectiveTwo") + ' ' + document.getElementById("nounTwo") + ' War, Americans were sent jelly beans to soldiers to put smiles on their faces. ' + document.getElementById("conjunctionOne") + ' this pushed the start of "penny candy" sweets you could buy for just one ' +  document.getElementById("nounTwo") + '. ' + document.getElementById("interjectionOne") + "! Ain't that something? " + document.getElementById("conjunctionTwo") + ' not all people thouhght ' + document.getElementById("pronounOne") + ' was/were worth all the hype. ' + document.getElementById("pronounTne") + ' thought ' + document.getElementById("pronounOne") + ' make you ' + document.getElementById("adverbTwo") + ' ' + document.getElementById("verbOne") + ' and ' + document.getElementById("verbTwo") + '. But, that just made everyone else think, "' + document.getElementById("interjectionTwo") + ' ' + document.getElementById("pronounTwo") + ' are so dumb!"';
-	document.write(paratwo);
-	/*document.getElementById("paraTwo").innerHTML = paratwo;
+	document.getElementById("paraTwo").innerHTML = paratwo;
 	document.getElementById("paraTwo").classList.toggle("hidden");
 	div.append(paratwo)
-	console.log(div.para-two);*/
+	console.log(div.para-two);
 }
 
